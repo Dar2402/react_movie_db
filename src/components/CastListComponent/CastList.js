@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
-import CastCard from "../CastCard/CastCard";
+import CastCard from "../CastCardComponent/CastCard";
 
 const CastList = ({ id }) => {
   const [data, setData] = useState([]);

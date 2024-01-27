@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import nodata from "../../assets/nodata.webp";
 
 import "./style.css";
-import CastList from "../CastList/CastList";
+import CastList from "../CastListComponent/CastList";
 
 const SingleMovieDetail = () => {
   // const params = useParams();
