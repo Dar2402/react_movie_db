@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import MovieCard from "../movieCard/MovieCard";
+import MovieCard from "../SingleMovieCard/SingleMovieCard";
 import Pagination from "../../shared/component/pagination/Pagination";
 
-const Search = ({ apiPath }) => {
+const SearchMovie = ({ apiPath }) => {
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [searchParams] = useSearchParams();
@@ -47,4 +47,4 @@ const Search = ({ apiPath }) => {
   );
 };
 
-export default Search;
+export default SearchMovie;

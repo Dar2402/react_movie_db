@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import nodata from "../../assets/nodata.webp";
 
-const MovieCard = ({ movie }) => {
+const SingleMovieCard = ({ movie }) => {
   const { id, original_title, vote_average, poster_path } = movie;
 
   const image = poster_path
@@ -24,4 +24,4 @@ const MovieCard = ({ movie }) => {
   );
 };
 
-export default MovieCard;
+export default SingleMovieCard;

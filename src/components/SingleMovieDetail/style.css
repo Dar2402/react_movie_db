@@ -210,6 +210,9 @@
     width: 100%;
     margin: 5px 0;
   }
+  .detail{
+    width: 100%;
+  }
 }
 @media (min-width: 600px) and (max-width: 930px) {
   .background-img {
@@ -225,7 +228,10 @@
     top: 90px;
     left: 80px;
     opacity: 0.1;
-    height: 60%;
+    height: 40%;
+  }
+  .detail{
+    width: 100%;
   }
 }
 
@@ -260,6 +266,9 @@
   }
   .movie-detail-image{
     display: block;
+    width: 100%;
+  }
+  .detail{
     width: 100%;
   }
 }

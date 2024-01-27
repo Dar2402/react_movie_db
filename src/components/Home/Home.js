@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import MovieCard from "../movieCard/MovieCard";
+import MovieCard from "../SingleMovieCard/SingleMovieCard";
 import "./style.css";
 import Pagination from "../../shared/component/pagination/Pagination";
 
-const Body = ({ apiPath }) => {
+const Home = ({ apiPath }) => {
   const [data, setData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -42,4 +42,4 @@ const Body = ({ apiPath }) => {
   );
 };
 
-export default Body;
+export default Home;

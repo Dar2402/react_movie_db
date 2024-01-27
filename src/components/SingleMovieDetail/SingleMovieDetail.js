@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import nodata from "../../assets/nodata.webp";
 
 import "./style.css";
-import CastList from "../castList/CastList";
+import CastList from "../CastList/CastList";
 
 const SingleMovieDetail = () => {
   // const params = useParams();
@@ -148,6 +148,7 @@ const SingleMovieDetail = () => {
             </div>
           </div>
           <div
+          className="detail"
             style={{
               marginTop: "12px",
               display: "flex",

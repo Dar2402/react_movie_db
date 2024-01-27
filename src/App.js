@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import Body from "./components/Body/Body";
+import Home from "./components/Home/Home";
 import SingleMovieDetail from "./components/SingleMovieDetail/SingleMovieDetail";
-import Search from "./components/search/Search";
+import SearchMovie from "./components/SearchMovie/SearchMovie";
 import "./App.css";
 import Topbar from "./shared/component/Topbar/Topbar";
 
@@ -10,12 +10,12 @@ function App() {
     <div className="App">
       <Topbar />
     <Routes>
-      <Route path="/" element={<Body apiPath="popular" />} />
+      <Route path="/" element={<Home apiPath="popular" />} />
       <Route path="movie/:id" element={<SingleMovieDetail />} />
-      <Route path="/movies/popular" element={<Body apiPath="popular" />} />
-      <Route path="/movies/top" element={<Body apiPath="top_rated" />} />
-      <Route path="/movies/upcoming" element={<Body apiPath="upcoming" />} />
-      <Route path="search" element={<Search apiPath="search/movie" />} />
+      <Route path="/movies/popular" element={<Home apiPath="popular" />} />
+      <Route path="/movies/top" element={<Home apiPath="top_rated" />} />
+      <Route path="/movies/upcoming" element={<Home apiPath="upcoming" />} />
+      <Route path="search" element={<SearchMovie apiPath="search/movie" />} />
     </Routes>
     </div>
   );
