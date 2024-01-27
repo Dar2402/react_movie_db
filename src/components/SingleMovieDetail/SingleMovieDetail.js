@@ -113,6 +113,7 @@ const SingleMovieDetail = () => {
   return (
     <div className="movie-detail-page">
       <div
+      className="background-img"
         style={{
           display: "flex",
           flexDirection: "row",
@@ -182,4 +183,3 @@ const SingleMovieDetail = () => {
 };
 
 export default SingleMovieDetail;
-
