@@ -113,7 +113,7 @@ const SingleMovieDetail = () => {
   return (
     <div className="movie-detail-page">
       <div
-      className="background-img"
+        className="background-img"
         style={{
           display: "flex",
           flexDirection: "row",
@@ -148,7 +148,7 @@ const SingleMovieDetail = () => {
             </div>
           </div>
           <div
-          className="detail"
+            className="detail"
             style={{
               marginTop: "12px",
               display: "flex",

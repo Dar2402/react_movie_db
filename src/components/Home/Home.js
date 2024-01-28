@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import MovieCard from "../SingleMovieCard/SingleMovieCard";
+import SingleMovieCard from "../SingleMovieCard/SingleMovieCard";
 import "./style.css";
 import Pagination from "../../shared/component/pagination/Pagination";
 
@@ -29,8 +29,9 @@ const Home = ({ apiPath }) => {
   return (
     <div className="body">
       <div className="movies-container">
+      {console.log(data[0])}
         {data?.map((movie) => (
-          <MovieCard key={movie.id} movie={movie} />
+          <SingleMovieCard key={movie.id} movie={movie} />
         ))}
       </div>
       <Pagination
